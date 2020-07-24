@@ -35,11 +35,14 @@ int main(){
 		sum+=array[i];
 	}
 	count=sum/limit;
-	if(sum%limit<=limit){
+	
+	if(sum%limit!=0){
+		if(sum%limit<=limit){
 		count++;
-	}
-	else{
+	   }
+	    else{
 		count+=2;
+	   }
 	}
 	
 	printf("\nHow many rockets are needed?:%d",count);
